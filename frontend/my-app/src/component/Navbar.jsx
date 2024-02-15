@@ -6,11 +6,6 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link href="/home">
-            Home
-          </Link>
-        </li>
-        <li>
           <Link href="/Quiz">
             Quiz
           </Link>

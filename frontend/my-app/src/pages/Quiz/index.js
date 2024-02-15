@@ -8,6 +8,8 @@ function HomePage() {
   const [score, setScore] = useState(0);
   const [showContinueButton, setShowContinueButton] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [showCorrectAlert, setShowCorrectAlert] = useState(false);
+  const [showIncorrectAlert, setShowIncorrectAlert] = useState(false);
 
   useEffect(() => {
     // Fetch quiz questions data from the API
@@ -20,48 +22,55 @@ function HomePage() {
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setShowContinueButton(true);
-
+  
     // Check if the selected option is correct
     const currentQuestion = questions[currentQuestionIndex];
-    if (option !== currentQuestion.correct_option) {
-      alert(`Incorrect! The correct option is ${currentQuestion.correct_option}`);
+    if (option === currentQuestion[`option${currentQuestion.correct_option}`]) {
+      setShowCorrectAlert(true); // Show correct alert
+      setShowIncorrectAlert(false); // Hide incorrect alert
+    } else {
+      setShowIncorrectAlert(true); // Show incorrect alert
+      setShowCorrectAlert(false); // Hide correct alert
     }
   };
-
+  
   const handleContinue = () => {
     // Check if the selected option is correct
     const currentQuestion = questions[currentQuestionIndex];
-    if (selectedOption === currentQuestion.correct_option) {
+    const correctOptionValue = currentQuestion[`option${currentQuestion.correct_option}`];
+    
+    if (selectedOption === correctOptionValue) {
       setScore(score + 1);
     }
-
+  
     // Move to the next question
     setCurrentQuestionIndex(currentQuestionIndex + 1);
     setSelectedOption(null);
     setShowContinueButton(false);
+    setShowCorrectAlert(false);
+    setShowIncorrectAlert(false);
   };
 
   return (
     <div className="container">
       <header>
-        <h1>Welcome to Our Quiz Platform</h1>
-        <p>Test your knowledge with our quiz questions.</p>
+        <h1>Welcome to Our Space Quiz</h1>
+        <p>Test your space knowledge with our quiz questions!</p>
       </header>
       <main>
         <section className="quiz-questions">
-          <h2>Quiz Questions</h2>
           <div className="question-list">
             {/* Render quiz questions */}
             {currentQuestionIndex < questions.length && (
               <div className="question-card">
-                <h3>{questions[currentQuestionIndex].question}</h3>
-                <ul>
+                <h2>{questions[currentQuestionIndex].question}</h2>
+                <ul className="options-list">
                   {/* Render options */}
                   {['option1', 'option2', 'option3', 'option4'].map(optionKey => (
                     <li key={optionKey}>
                       <button
-                        onClick={() => handleOptionClick(questions[currentQuestionIndex].correct_option)}
-                        className={selectedOption === questions[currentQuestionIndex].correct_option ? 'correct-option' : ''}
+                        onClick={() => handleOptionClick(questions[currentQuestionIndex][optionKey])}
+                        className={`option-button ${selectedOption === questions[currentQuestionIndex][optionKey] ? 'selected' : ''}`}
                         disabled={selectedOption !== null} // Disable buttons after selection
                       >
                         {questions[currentQuestionIndex][optionKey]}
@@ -69,6 +78,8 @@ function HomePage() {
                     </li>
                   ))}
                 </ul>
+                {showCorrectAlert && <p className="alert-message correct">Correct!</p>}
+                {showIncorrectAlert && <p className="alert-message incorrect">Incorrect! The correct option is: {questions[currentQuestionIndex].correct_option}</p>}
               </div>
             )}
             {showContinueButton && (
@@ -77,14 +88,15 @@ function HomePage() {
               </div>
             )}
             {currentQuestionIndex === questions.length && (
-              <div>
+              <div className="quiz-results">
                 <h2>Quiz Completed!</h2>
                 <p>Your Score: {score}/{questions.length}</p>
                 <Link href="/">
-                  Restart Quiz
+                  <button>Restart Quiz</button>
                 </Link>
               </div>
             )}
+            
           </div>
         </section>
       </main>
