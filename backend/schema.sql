@@ -30,6 +30,23 @@ CREATE TABLE IF NOT EXISTS `space`.`quiz_questions` (
   `correct_option` INT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 12
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `space`.`space_facts`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `space`.`space_facts` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `fact` TEXT NOT NULL,
+  `image_url` VARCHAR(255) NULL DEFAULT NULL,
+  `source` VARCHAR(255) NULL DEFAULT NULL,
+  `category` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
