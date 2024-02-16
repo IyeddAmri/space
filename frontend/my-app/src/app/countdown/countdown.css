@@ -45,6 +45,20 @@ body {
     margin-bottom: 10px;
   }
   
+  .countdown-bar {
+    height: 20px !important;
+    background: linear-gradient(to right, #007BFF 0%, #007BFF 50%, #D9D9D9 50%, #D9D9D9 100%) !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    transition: background-size 0.5s ease-in-out !important;
+    background-color: red ;
+  }
+  
+  
+
+
+
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -65,3 +79,5 @@ body {
     }
   }
   
+  
+ 

@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { auth, GoogleAuthProvider } from '../firebase/config'; // Importing GoogleAuthProvider from firebase/config
+import { auth, GoogleAuthProvider } from '../firebase/config'; 
 import { useRouter } from 'next/navigation';
 import './in.css';
 
@@ -9,7 +9,7 @@ const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
-  const [signInWithGoogle] = useSignInWithGoogle(auth); // Using useSignInWithGoogle for Google sign-in
+  const [signInWithGoogle] = useSignInWithGoogle(auth); 
 
   const router = useRouter();
 

@@ -34,16 +34,20 @@ const calculateTimeUntil = (endDate) => {
 
 // Function to calculate the percentage of time passed
 const calculatePercentage = (time) => {
+  if (!time) {
+    return 0;
+  }
+
   const totalSeconds = (time.days * 24 * 60 * 60) + (time.hours * 60 * 60) + (time.minutes * 60) + time.seconds;
-  const totalSecondsInADay = 24 * 60 * 60;
-  return ((totalSecondsInADay - totalSeconds) / totalSecondsInADay) * 100;
+  const totalSecondsInTrip = 24 * 60 * 60; // Assuming each trip lasts for a day
+  return ((totalSecondsInTrip - totalSeconds) / totalSecondsInTrip) * 100;
 };
 
 const Countdown = () => {
   // Define your list of trips with their destination and end date
   const trips = [
     { destination: 'Mars', endDate: '2024-03-15T12:00:00' },
-    { destination: 'Jupiter', endDate: '2025-06-20T09:00:00' },
+    { destination: 'Jupiter', endDate: '2024-06-20T09:00:00' },
     { destination: 'Saturn', endDate: '2026-09-10T15:30:00' },
     { destination: 'Neptune', endDate: '2027-12-25T18:45:00' },
     { destination: 'Uranus', endDate: '2028-08-31T10:15:00' },
@@ -87,7 +91,7 @@ const Countdown = () => {
               <p>The time for this trip has come!</p>
           )}
           <div className="countdown-bar" style={{ width: `${calculatePercentage(remainingTime[trip.destination])}%` }}></div>
-          <hr /> {/* Add a line under each trip */}
+          <hr /> 
         </div>
       ))}
     </div>
