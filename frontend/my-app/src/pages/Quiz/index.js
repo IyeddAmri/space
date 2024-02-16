@@ -84,7 +84,7 @@ function HomePage() {
             )}
             {showContinueButton && (
               <div className="continue-button">
-                <button onClick={handleContinue}>Continue</button>
+                <button  onClick={handleContinue}>Continue</button>
               </div>
             )}
             {currentQuestionIndex === questions.length && (

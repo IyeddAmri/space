@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from './style.css'; // Import the CSS file
+import '../../pages/fact/style.css';
 
 function useFetchSpaceFacts() {
   const [spaceFacts, setSpaceFacts] = useState([]);
@@ -26,29 +26,32 @@ function useFetchSpaceFacts() {
 }
 
 function SpaceFactsPage() {
-    const spaceFacts = useFetchSpaceFacts();
-  
-    return (
-      <div className={styles.container}>
-        <h1>Space Facts</h1>
-        <ul>
-          {spaceFacts.map((fact) => (
-            <li key={fact.id} className={styles.item}>
-              <div>
-                <h3>{fact.fact}</h3>
+  const spaceFacts = useFetchSpaceFacts();
+
+  return (
+    <div>
+      <h1>Do You Know</h1>
+      <ul className="container">
+        {spaceFacts.map((fact) => (
+          <li key={fact.id} className="box">
+            <div>
+              <h3 className="fact">{fact.fact}</h3>
+              <div className="image">
                 <img src={fact.image_url} alt="Space Fact" />
-                <p>Source: {fact.source}</p>
-                <p>Category: {fact.category}</p>
               </div>
-              <Link href={`/facts/${fact.id}`} className={styles.link}>
-                More details
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-  
+              <div className="info">
+                <p><strong>Source:</strong> {fact.source}</p>
+                <p><strong>Category:</strong> {fact.category}</p>
+              </div>
+            </div>
+            <Link href={`/facts/${fact.id}`} className="link">
+              More details
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export default SpaceFactsPage;
