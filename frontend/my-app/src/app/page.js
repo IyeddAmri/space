@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from "next/image";
-import Page from './educational/page';
-
-export default function Home() {
+import Home from '../components/Home'
+export default function Page() {
   return (
-    <main>
-     
-      <Page />
-    </main>
+    <div>
+     <Home/>
+    </div>
   );
 }

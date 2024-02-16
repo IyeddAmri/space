@@ -9,7 +9,7 @@ const getAlledu = (req, res) => {
         }
     });
 }
-
+ 
 const getOneedu = (req, res) => {
     const id = req.params.id;
     education.getOne(id, (err, result) => {
