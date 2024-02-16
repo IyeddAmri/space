@@ -1,10 +1,22 @@
-import React from 'react';
-import Image from "next/image";
-import Home from '../components/Home'
-export default function Page() {
+
+
+import Navbar from "../component/Navbar";
+import Facts from "../component/facts"
+import Pages from '@/app/HomePage/page'
+import Page from '@/app/Book/page'
+import Homes from '../component/edu'
+
+function Home() {
   return (
     <div>
-     <Home/>
-    </div>
+      <Navbar/>
+      <Homes/>
+
+      <Facts/>
+      <Pages/>
+      </div>
+
+
   );
 }
+export default Home
