@@ -1,0 +1,133 @@
+body {
+  background-image: linear-gradient(to bottom right, #02075d, #0a0a0a, #3c1463, #2f2f2f, #1c6874);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #02075d; /* Dark blue */
+}
+
+.quiz-questions {
+  margin-top: 20px;
+}
+
+.question-card {
+  background-color: #0a0a0a; /* Black */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.question-card h2 {
+  margin-bottom: 10px;
+  color: #ffffff; /* White */
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.option-button {
+  background-color: #2f2f2f; /* Dark gray */
+  color: #ffffff; /* White */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #1c6874; /* Teal or turquoise */
+}
+
+.option-button.selected {
+  background-color: #3c1463; /* Dark purple */
+}
+
+.alert-message, p {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff; /* White */
+}
+
+.correct {
+  background-color: #0bbc0b;
+  width: 70px;
+  position: relative;
+  left: 300px;
+}
+
+.incorrect {
+  background-color: #d10909;
+  width: 230px;
+  position: relative;
+  left: 220px;
+}
+
+
+
+.quiz-results {
+  text-align: center;
+  background-color: #2f2f2f; /* Dark gray */
+  color: #ffffff; /* White */
+}
+
+.quiz-results a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.quiz-results a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #007bff; /* Dark blue */
+  color: #ffffff; /* White */
+}
+
+.border {
+  border: 2px solid #586e75; /* Dark gray */
+}
+
+.continue-button button {
+  background-color: #007bff; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  left: 300px;
+}
+
+.continue-button button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: translateY(-3px);
+}
+
+.continue-button button:focus {
+  outline: none;
+}
+
+.continue-button button:active {
+  transform: translateY(1px);
+}

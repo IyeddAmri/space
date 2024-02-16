@@ -1,36 +1,39 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Ignore dependencies
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
-# testing
+# Ignore test coverage reports
 /coverage
 
-# next.js
+# Ignore Next.js build output
 /.next/
 /out/
 
-# production
+# Ignore production build output
 /build
 
-# misc
-
+# Ignore PEM files
 *.pem
 
-# debug
+# Ignore debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# Ignore local environment files
 .env*.local
 
-# vercel
+# Ignore Vercel related files
 .vercel
 
-# typescript
+# Ignore TypeScript build artifacts
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore videos
+*.mp4
+*.avi
+*.mov
+# Add more video file extensions if needed ......................
