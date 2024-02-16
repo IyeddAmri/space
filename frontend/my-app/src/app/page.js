@@ -1,11 +1,22 @@
+
+
+import Navbar from "../component/Navbar";
+import Facts from "../component/facts"
 import Pages from '@/app/HomePage/page'
 import Page from '@/app/Book/page'
-export default function Home() {
+import Homes from '../component/edu'
+
+function Home() {
   return (
-    <main >
+    <div>
+      <Navbar/>
+      <Homes/>
 
-<Pages/>
+      <Facts/>
+      <Pages/>
+      </div>
 
-    </main>
+
   );
 }
+export default Home
