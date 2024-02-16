@@ -1,0 +1,83 @@
+/* countdown.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0f23;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .trip-card {
+    background-color: #1f1f3f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  .trip-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .trip-card p {
+    font-size: 1.2rem;
+  }
+  
+  .trip-card hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .countdown-bar {
+    height: 20px !important;
+    background: linear-gradient(to right, #007BFF 0%, #007BFF 50%, #D9D9D9 50%, #D9D9D9 100%) !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    transition: background-size 0.5s ease-in-out !important;
+    background-color: red ;
+  }
+  
+  
+
+
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+ 

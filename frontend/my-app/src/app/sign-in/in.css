@@ -1,0 +1,63 @@
+body {
+    background: url('https://img.freepik.com/photos-gratuite/vaisseau-spatial-brillant-orbite-autour-planete-dans-galaxie-etoilee-generee-par-ia_188544-9655.jpg?w=1060&t=st=1707988447~exp=1707989047~hmac=81e42fa8b7f563aa43b3a0efa7e09605d67d6b258ecc4cd95ebb63ee6a86c4e6') no-repeat center center fixed;
+    /* Set background image, prevent repeat, center horizontally and vertically, and make it fixed */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure the container is centered vertically */
+    margin: 0;
+  }
+.min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .custom-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .custom-title {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .custom-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  
