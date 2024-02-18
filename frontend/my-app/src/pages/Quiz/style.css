@@ -1,27 +1,32 @@
-body {
-  background-image: linear-gradient(to bottom right, #02075d, #0a0a0a, #3c1463, #2f2f2f, #1c6874);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 2000px;
+ height: 1000px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #02075d; /* Dark blue */
+  background-color: #00000055; /* Dark blue */
+ 
 }
 
 .quiz-questions {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .question-card {
-  background-color: #0a0a0a; /* Black */
+  background-color: #0300006d; /* Black */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  margin-top: 6%;
 }
 
 .question-card h2 {
@@ -35,7 +40,7 @@ body {
 }
 
 .option-button {
-  background-color: #2f2f2f; /* Dark gray */
+  background-color: #00000070; /* Dark gray */
   color: #ffffff; /* White */
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -48,7 +53,7 @@ body {
 }
 
 .option-button:hover {
-  background-color: #1c6874; /* Teal or turquoise */
+  background-color: #f700ff7d; /* Teal or turquoise */
 }
 
 .option-button.selected {
@@ -60,6 +65,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   color: #ffffff; /* White */
+  margin-left: 20%;
 }
 
 .correct {
@@ -80,8 +86,8 @@ body {
 
 .quiz-results {
   text-align: center;
-  background-color: #2f2f2f; /* Dark gray */
-  color: #ffffff; /* White */
+  background-color: #0000002b;
+  color: #23ff00;
 }
 
 .quiz-results a {
@@ -96,6 +102,7 @@ body {
 .button {
   background-color: #007bff; /* Dark blue */
   color: #ffffff; /* White */
+  
 }
 
 .border {
@@ -117,6 +124,7 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
   position: relative;
   left: 300px;
+  margin-left: 20%;
 }
 
 .continue-button button:hover {
@@ -130,4 +138,21 @@ body {
 
 .continue-button button:active {
   transform: translateY(1px);
+}
+
+.jj{
+  color: red;
+}
+.pp{
+  margin-left: 30%;
+  margin-top: 8%;
+  font-size: 20px;
+}
+.q{
+  background-color: #ff0000;
+  color: white;
+  border-radius: 1.25rem;
+}
+.y{
+  margin-left: 1%;
 }

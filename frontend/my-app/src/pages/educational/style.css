@@ -1,114 +1,337 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(144, 0, 255, 0.639);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 90px;
+}
+
+.card {
   
-  .heading {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgba(123, 123, 212, 0.795);
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 90px;
-  }
-  
-  .card {
-    
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(198, 175, 175, 0.1);
-  }
-  
-  .image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .description {
-    padding: 10px;
-   
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  .description:hover {
-    background-color: rgba(255, 255, 255, 0.683);
-  }
-  
-  .description p {
-    margin: 0;
-  }
-  body{
-    background-image: url("https://i.pinimg.com/originals/b1/8d/51/b18d5124d08c77a110323493464ff7ae.gif");
-  }
-  .feedback-section {
-    margin-top: 50px;
-  }
-  
-  .feedback-list {
-    margin-bottom: 20px;
-  }
-  
-  .feedback-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .feedback-item p {
-    margin: 0;
-  }
-  
-  .feedback-item:last-child {
-    margin-bottom: 0;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  .feedback-buttons {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5px;
-  }
-  
-  .feedback-buttons button {
-    margin-left: 5px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .feedback-buttons button:hover {
-    background-color: #0056b3;
-  }
-  
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(198, 175, 175, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.description {
+  padding: 10px;
+ 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.description:hover {
+  background-color: rgba(255, 255, 255, 0.683);
+}
+
+.description p {
+  margin: 0;
+}
+body{
+  background-image: url("https://i.pinimg.com/originals/b1/8d/51/b18d5124d08c77a110323493464ff7ae.gif");
+}
+.feedback-section {
+  margin-top: 50px;
+  color: red;
+
+}
+
+.feedback-list {
+  margin-bottom: 20px;
+}
+
+.feedback-item {
+  background-color: #1f1f1f;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.feedback-item p {
+  margin: 0;
+
+}
+
+.feedback-item:last-child {
+  margin-bottom: 0;
+
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #474444;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+button {
+  background-color: #474444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b327;
+}
+.feedback-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.feedback-buttons button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #474444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-buttons button:hover {
+  background-color: #0056b3;
+}
+.search-bar-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #1f1f1f00;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.search-bar-input::placeholder {
+  color: #aaaaaa;
+}
+
+.search-bar-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #aaaaaa;
+}
+
+.search-bar-icon:hover {
+  color: #ffffff;
+}
+
+.search-bar-container::before {
+  content: '\f002';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #aaaaaa;
+}
+
+.search-bar-container:focus-within::before {
+  color: #ffffff;
+}
+.fefe{
+  color: rgba(123, 123, 212, 0.795);
+  padding-left: 45%;
+}
+.slick-slider {
+  position: relative;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Adjust the position as needed */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the color as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the hover color as needed */
+}
+
+.slick-dots li.slick-active button {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the active color as needed */
+}
+.slider-container {
+  margin: 0 auto; /* This will center the slider container horizontally */
+  max-width: 800px; /* Adjust the max-width as needed */
+}
+.slick-slide img {
+  margin: 0 auto;
+}
+.gallery-title {
+text-align: center;
+margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.gallery-title h2 {
+font-size: 1.5rem; /* Adjust font size as needed */
+
+color: rgba(123, 123, 212, 0.795);
+}
+/* Add the following styles for the explosion animation */
+
+.container.exploded {
+animation: explodePage 0.5s forwards;
+}
+
+@keyframes explodePage {
+0% {
+  transform: scale(1);
+}
+100% {
+  transform: scale(5);
+  opacity: 0;
+}
+}
+
+.explosion-button-container {
+text-align: center;
+margin-top: 50px; /* Adjust margin as needed */
+}
+
+.explosion-button {
+background-color: #645653; /* Adjust color to red fire color */
+color: white;
+padding: 15px 30px;
+font-size: 1.2rem;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+box-shadow: 0px 0px 10px rgba(255, 212, 212, 0.3); /* Add shadow for depth effect */
+}
+
+.explosion-button:hover {
+background-color: #000000; /* Darken color on hover */
+}
+
+.explosion-button:focus {
+outline: none; /* Remove focus outline */
+}
+.cool-button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh; /* Ensures the container covers the entire viewport height */
+box-shadow: 0px 0px 10px rgba(255, 212, 212, 0.3);
+}
+
+.cool-button {
+display: inline-block;
+padding: 15px 30px;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+color: #ffffff;
+background-color: #504d4d;
+border: none;
+border-radius: 5px;
+position: relative;
+overflow: hidden;
+transition: background-color 0.3s;
+margin: 10px; /* Add margin to create space between buttons */
+}
+
+.cool-button::before {
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+width: 300%;
+height: 300%;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+transition: all 0.6s ease-out;
+z-index: 0;
+transform: translate(-50%, -50%);
+}
+
+.cool-button:hover::before {
+width: 0;
+height: 0;
+}
+
+.cool-button span {
+position: relative;
+z-index: 1;
+}
+
+.cool-button::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 5px;
+transition: opacity 0.3s;
+z-index: -1;
+opacity: 0;
+}
+
+.cool-button:hover::after {
+opacity: 1;
+}
+
+.cool-button:hover {
+background-color: #000000;
+}
+.s{
+  margin-left: 50;
+}

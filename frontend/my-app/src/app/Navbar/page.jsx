@@ -7,7 +7,7 @@ import '@/app/Navbar/navbar.css'
       <div className=' flex justify-between mx-auto px-0 py-5'>
         <div className='flex items-center justify-between whitespace-nowrap order-1'>
          
-                <a  class="btn-glow"  href="">Book Now</a>
+                <a  class="btn-glow"  href="/Book">Book Now</a>
 
         </div>
         <a   className="uppercase tracking-wide mr-1 md:mr-8 xl:mr-12" href="/">
@@ -21,12 +21,10 @@ import '@/app/Navbar/navbar.css'
                 </g>
                 </svg>
                 </a>
-        <a  id='a' className="active btn-nav" href="/">Education</a>
-        <a  id='a' className="active btn-nav" href="/">Games</a>
-        <a  id='a' className="active btn-nav" href="/">Do You Know</a>
-        <a  id='a' className="active btn-nav" href="/">Mission</a>
-        <a  id='a' className="active btn-nav" href="/">Discover Earth</a>
-        <a  id='a' className="active btn-nav" href="/">Login</a>
+        <a  id='a' className="active btn-nav" href="/educational">Educational</a>
+        <a  id='a' className="active btn-nav" href="/Quiz">Quiz</a>
+        <a  id='a' className="active btn-nav" href="/fact">Do You Know</a>
+        <a  id='a' className="active btn-nav" href="/countdouwn">Mission</a>
 
 
 

@@ -1,13 +1,11 @@
 import React from 'react'
 import '@/app/Book/book.css'
-import Page from '../Navbar/page'
 
 const page = () => {
 return (
     
     <div>
-        <Page/>
-               <div className="modal">
+        <div className="modal">
       <form className="form">
         <div className="payment--options">
         <button name="paypal" type="button">

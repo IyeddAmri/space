@@ -1,20 +1,12 @@
-
-
-import Navbar from "../component/Navbar";
-import Facts from "../component/facts"
 import Pages from '@/app/HomePage/page'
 import Page from '@/app/Book/page'
-import Homes from '../component/edu'
-
+import Log from '@/app/Login/page'
 function Home() {
   return (
     <div>
-      <Navbar/>
-      <Homes/>
-
-      <Facts/>
+<Log/>
+      
       <Pages/>
-      <Page/>
       </div>
 
 

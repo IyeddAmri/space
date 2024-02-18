@@ -1,42 +1,66 @@
-body {
-    background: url('https://img.freepik.com/photos-gratuite/vaisseau-spatial-brillant-orbite-autour-planete-dans-galaxie-etoilee-generee-par-ia_188544-9655.jpg?w=1060&t=st=1707988447~exp=1707989047~hmac=81e42fa8b7f563aa43b3a0efa7e09605d67d6b258ecc4cd95ebb63ee6a86c4e6') no-repeat center center fixed;
-    /* Set background image, prevent repeat, center horizontally and vertically, and make it fixed */
-    background-size: cover; /* Ensure the background image covers the entire page */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Make sure the container is centered vertically */
-    margin: 0;
-  }
-  
-  .signup-container {
-    background-color: #fff;
+.signup-container {
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Set maximum width for the container */
-    width: 100%; /* Take full width of the parent */
+    border-radius: 10%;
+    backdrop-filter: blur(10px);
+    margin-top: 5%;
+  }
+  .signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .input-field {
-    width: calc(100% - 20px); /* Adjust the width considering padding */
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #f2f2f242;
+    border: 1px solid #0099ff37;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    margin-bottom: 5%;
+    color: rgb(255, 255, 255);
   }
   
   .signup-btn {
-    background-color: #007bff;
+    width: 60%;
+    background-color: #007bff41;
     color: #fff;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5%;
+    margin-left: 21%;
   }
   
   .signup-btn:hover {
-    background-color: #0056b3;
+    background-color: #33b300;
   }
-  
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.g{
+margin-left: 40%;
+}

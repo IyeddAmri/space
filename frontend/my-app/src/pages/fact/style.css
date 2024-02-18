@@ -1,22 +1,26 @@
 
-body{
-  background-image: linear-gradient(to bottom right, #02075d, #0a0a0a, #3c1463, #2f2f2f, #1c6874);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 9px;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom right, #000000, #02020b, #0e0e1a, #11112c, #000000);
+  background:rgba(0, 0, 0, 0.345);
+  margin-top: 3%;
 }
 
 .box {
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+ 
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 8px rgb(242, 0, 255);
   margin-bottom: 20px;
   padding: 20px;
   transition: transform 0.3s ease-in-out;
@@ -42,10 +46,12 @@ body{
   height: auto;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+ 
 }
 
 .info {
   margin-bottom: 15px;
+  margin-left: 40%;
 }
 
 .info p {
@@ -62,6 +68,7 @@ body{
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
+  margin-left: 40%;
 }
 
 .link:hover {
