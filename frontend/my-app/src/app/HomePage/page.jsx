@@ -1,13 +1,13 @@
 import React from 'react'
 import '@/app/HomePage/home.css'
-import Page from '../Navbar/page'
+//import Page from '../Navbar/page'
 import Pages from '../Footer/page'
 import Image from 'next/image'
  const page = () => {
   return (
     
     <div >
-        <Page/>
+        
         
        <p className='hello'> Take your place in space history</p>
        <div className='t'>
@@ -31,7 +31,7 @@ Your preflight immersion begins at Kennedy Space Center. Once you’re settled a
                 </p>
                 <Image className="tsw3"src="/rs.png" width={1500}height={200} ></Image>
                 <div className='x'>
-                    <p className='z '>Launch from Marine Spaceport (MS) Voyager or from land on Florida’s Space Coast so click in <a href="" className='book'>BOOK NOW</a></p>
+                    <p className='z '>Launch from Marine Spaceport (MS) Voyager or from land on Florida’s Space Coast so click in <a href="/Book" className='book'>BOOK NOW</a></p>
                 </div>
                 <video className='vd'   autoPlay loop muted >
                     <source src="/bb.mov" type="video/mp4" />

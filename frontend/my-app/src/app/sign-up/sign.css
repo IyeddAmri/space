@@ -1,0 +1,66 @@
+.signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10%;
+    backdrop-filter: blur(10px);
+    margin-top: 5%;
+  }
+  .signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #f2f2f242;
+    border: 1px solid #0099ff37;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    margin-bottom: 5%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .signup-btn {
+    width: 60%;
+    background-color: #007bff41;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5%;
+    margin-left: 21%;
+  }
+  
+  .signup-btn:hover {
+    background-color: #33b300;
+  }
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.g{
+margin-left: 40%;
+}

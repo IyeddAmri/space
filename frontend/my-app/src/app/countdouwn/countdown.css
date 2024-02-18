@@ -1,0 +1,111 @@
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out forwards;
+    background: linear-gradient(45deg, #ff00bf, #ff000097 , #4b0082, #004cff, #ff0040, #9400d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; /* Increase font weight for thicker text */
+}
+
+.trip-card {
+    background-color: #0000002f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out forwards;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgb(242, 0, 255);
+
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.trip-card p {
+    font-size: 1.2rem;
+}
+
+.trip-card hr {
+    border: none;
+    border-top: 1px solid rgba(242, 200, 200, 0.521);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.countdown-circle {
+    width: 130px;
+    height: 110px;
+    border-radius: 70%;
+    background-color: #00000032; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #ffdada;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-circle::before {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* background-color: #1f1f3f; */
+    position: absolute;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip-price {
+    order: -1; /* Moves the price to the left */
+    color: greenyellow;
+}
+
+.book-now-btn {
+    margin-left: auto; /* Moves the button to the right */
+}
+.books:hover{
+    color: rgb(0, 255, 4);
+    background-color: rgba(128, 128, 128, 0.345);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
